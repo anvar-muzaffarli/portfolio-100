@@ -14,6 +14,7 @@ body {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -24,6 +25,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 30px 112.5px;
+  
 }
 
 .nav-links {
@@ -62,10 +64,13 @@ a {
 .overlay {
     position: fixed;
     background-color: rgba(0,0,0,.7);
+    top: 0;
+    left:0;
     width: 100%;
     height: 100vh;
     opacity: 0;
     overflow-x:hidden;
+    z-index:-1;
 }
 
 .active {
@@ -102,4 +107,99 @@ a {
 .fa-xmark:hover, .nav-links-overlay a:hover {
     color: #fff;
     transition: 2s cubic-bezier(.16,1.14,1,-0.62);
+}
+
+
+/* PORTFOLIO SECTION (INTROSECTION) */
+
+.introsection {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width:100%;
+ 
+    padding: 0 112.5px;
+  
+
+}
+
+.intro-left-side {
+    padding-top: 117px;
+}
+
+.introsection > .intro-left-side h1 {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 82px;
+
+
+letter-spacing: 2px;
+}
+
+.introsection > .intro-left-side h1 span {
+    color:#ff8a56;
+    
+}
+
+.intro-right-side {
+    padding-top: 70px;
+}
+
+.introsection > .intro-right-side {
+    min-width: 500px;
+}
+
+.introsection > .intro-left-side small {
+    color:#666;
+    font-size: 22px;
+    margin: 20px 0;
+    display: inline-block;
+
+}
+
+.intro-left-side button {
+    background-color: #000;
+    width: 151px;
+    height: 58px;
+    margin-right: 20px;
+    color: #fff;
+    font-size: 22px;
+}
+
+.introsection > .intro-right-side img {
+    width: 100%;
+}
+
+
+@media(max-width:1094px) and (min-width:841px) {
+    .intro-left-side {
+       
+        margin: 0 auto;
+       
+        
+    }
+
+    .introsection {
+        padding-left:0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .intro-right-side {
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:840px) {
+    .intro-left-side h1 {
+        font-size:34px;
+    }
+
+    .intro-right-side {
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:768px) {
+   
 }
