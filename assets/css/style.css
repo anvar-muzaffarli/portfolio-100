@@ -242,3 +242,28 @@ letter-spacing: 2px;
 
         
     }
+
+
+/* services */
+
+.services h6,
+.services h2 
+{
+    text-align: center;
+}
+
+.services-cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 70px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    width: 30%;
+    min-width: 300px;
+}
+
+.services ul {
+    list-style-position: inside !important;
+}
